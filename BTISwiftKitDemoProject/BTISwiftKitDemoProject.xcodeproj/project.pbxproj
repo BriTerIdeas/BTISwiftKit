@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361AC0BA1BB98CEA008830B3 /* TableRowInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361AC0B81BB98CEA008830B3 /* TableRowInfo.swift */; settings = {ASSET_TAGS = (); }; };
+		361AC0BB1BB98CEA008830B3 /* TableSectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361AC0B91BB98CEA008830B3 /* TableSectionInfo.swift */; settings = {ASSET_TAGS = (); }; };
+		361AC0BE1BB98CFF008830B3 /* Array+BTIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361AC0BD1BB98CFF008830B3 /* Array+BTIKitExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		361AC0C11BB98D19008830B3 /* TableContentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361AC0C01BB98D19008830B3 /* TableContentsManager.swift */; settings = {ASSET_TAGS = (); }; };
 		36C7D84C1BB4343B00304308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C7D84B1BB4343B00304308 /* AppDelegate.swift */; };
 		36C7D84E1BB4343B00304308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C7D84D1BB4343B00304308 /* ViewController.swift */; };
 		36C7D8511BB4343B00304308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36C7D84F1BB4343B00304308 /* Main.storyboard */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		361AC0B81BB98CEA008830B3 /* TableRowInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRowInfo.swift; sourceTree = "<group>"; };
+		361AC0B91BB98CEA008830B3 /* TableSectionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionInfo.swift; sourceTree = "<group>"; };
+		361AC0BD1BB98CFF008830B3 /* Array+BTIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+BTIKitExtensions.swift"; path = "Extensions/Array+BTIKitExtensions.swift"; sourceTree = "<group>"; };
+		361AC0C01BB98D19008830B3 /* TableContentsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableContentsManager.swift; path = Managers/TableContentsManager.swift; sourceTree = "<group>"; };
 		36C7D8481BB4343B00304308 /* BTISwiftKitDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTISwiftKitDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C7D84B1BB4343B00304308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36C7D84D1BB4343B00304308 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +91,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361AC0BC1BB98CF5008830B3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				361AC0BD1BB98CFF008830B3 /* Array+BTIKitExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		361AC0BF1BB98D07008830B3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				361AC0C01BB98D19008830B3 /* TableContentsManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		36C7D83F1BB4343B00304308 = {
 			isa = PBXGroup;
 			children = (
@@ -141,7 +165,9 @@
 			children = (
 				36C7D88C1BB4353C00304308 /* BTISwiftKit.h */,
 				36C7D88D1BB4353C00304308 /* Info.plist */,
+				361AC0BC1BB98CF5008830B3 /* Extensions */,
 				36C7D88E1BB4353C00304308 /* Models */,
+				361AC0BF1BB98D07008830B3 /* Managers */,
 				36C7D8901BB4353C00304308 /* View Controllers */,
 			);
 			name = BTISwiftKit;
@@ -151,6 +177,8 @@
 		36C7D88E1BB4353C00304308 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				361AC0B81BB98CEA008830B3 /* TableRowInfo.swift */,
+				361AC0B91BB98CEA008830B3 /* TableSectionInfo.swift */,
 				36C7D88F1BB4353C00304308 /* NotificationInfo.swift */,
 			);
 			path = Models;
@@ -303,7 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				361AC0C11BB98D19008830B3 /* TableContentsManager.swift in Sources */,
+				361AC0BE1BB98CFF008830B3 /* Array+BTIKitExtensions.swift in Sources */,
 				36C7D84E1BB4343B00304308 /* ViewController.swift in Sources */,
+				361AC0BA1BB98CEA008830B3 /* TableRowInfo.swift in Sources */,
+				361AC0BB1BB98CEA008830B3 /* TableSectionInfo.swift in Sources */,
 				36C7D8971BB4358600304308 /* SamplePlainViewController.swift in Sources */,
 				36C7D8931BB4353C00304308 /* NotificationInfo.swift in Sources */,
 				36C7D84C1BB4343B00304308 /* AppDelegate.swift in Sources */,
@@ -534,6 +566,7 @@
 				36C7D8721BB4343C00304308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36C7D8731BB4343C00304308 /* Build configuration list for PBXNativeTarget "BTISwiftKitDemoProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +575,7 @@
 				36C7D8751BB4343C00304308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36C7D8761BB4343C00304308 /* Build configuration list for PBXNativeTarget "BTISwiftKitDemoProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +584,7 @@
 				36C7D8781BB4343C00304308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
